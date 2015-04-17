@@ -35,6 +35,7 @@ public class do_ProgressBar_View extends FrameLayout implements DoIUIModuleView,
 	private ProgressBar progressBar;
 
 	private Context context;
+
 	public do_ProgressBar_View(Context context) {
 		super(context);
 		this.context = context;
@@ -56,7 +57,7 @@ public class do_ProgressBar_View extends FrameLayout implements DoIUIModuleView,
 				_layoutId = DoResourcesHelper.getIdentifier("do_large_progressbar", "layout", this);
 			} else if ("small".equals(_value)) {
 				_layoutId = DoResourcesHelper.getIdentifier("do_small_progressbar", "layout", this);
-			}else{
+			} else {
 				_layoutId = DoResourcesHelper.getIdentifier("do_normal_progressbar", "layout", this);
 			}
 			if (_layoutId > 0) {
@@ -66,6 +67,7 @@ public class do_ProgressBar_View extends FrameLayout implements DoIUIModuleView,
 		if (progressBar == null) {
 			progressBar = new ProgressBar(context);
 		}
+		progressBar.setMax(100);
 		this.addView(progressBar);
 	}
 
@@ -87,18 +89,9 @@ public class do_ProgressBar_View extends FrameLayout implements DoIUIModuleView,
 	@Override
 	public void onPropertiesChanged(Map<String, String> _changedValues) {
 		DoUIModuleHelper.handleBasicViewProperChanged(this.model, _changedValues);
-		if (_changedValues.containsKey("progress") || _changedValues.containsKey("max")) {
-			int _max = DoTextHelper.strToInt(_changedValues.get("max"), 100);
-			progressBar.setMax(_max);
-			int _progress = DoTextHelper.strToInt(_changedValues.get("progress"), 0);
-			progressBar.setProgress(_progress);
-			if(_progress == _max){
-				DoInvokeResult _result = new DoInvokeResult(this.model.getUniqueKey());
-				this.model.getEventCenter().fireEvent("finish", _result);
-			}
-		}
-		if (_changedValues.containsKey("secondaryProgress")) {
-			progressBar.setSecondaryProgress(DoTextHelper.strToInt(_changedValues.get("secondaryProgress"), 0));
+		if (_changedValues.containsKey("progress")) {
+			int _progress = (int) Math.round(DoTextHelper.strToDouble(_changedValues.get("progress"), 0));
+			progressBar.setProgress(_progress * 100);
 		}
 	}
 
