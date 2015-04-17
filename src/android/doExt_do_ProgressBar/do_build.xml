@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <project basedir="." default="build" name="DoExtBuild">
-	<property name="projectName" value="do_ScrollView"/>
+	<property name="projectName" value="do_ProgressBar"/>
 	<property name="buildDir" value="build"/>
 	<property name="src" value="src/doext" />
 	<property name="classes" value="${buildDir}/classes" />
