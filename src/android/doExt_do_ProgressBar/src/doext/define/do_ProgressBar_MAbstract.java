@@ -5,9 +5,9 @@ import core.object.DoProperty;
 import core.object.DoProperty.PropertyDataType;
 
 
-public abstract class do_PrograssBar_MAbstract extends DoUIModule{
+public abstract class do_ProgressBar_MAbstract extends DoUIModule{
 
-	protected do_PrograssBar_MAbstract() throws Exception {
+	protected do_ProgressBar_MAbstract() throws Exception {
 		super();
 	}
 	

@@ -16,8 +16,8 @@ import core.interfaces.DoIUIModuleView;
 import core.object.DoInvokeResult;
 import core.object.DoProperty;
 import core.object.DoUIModule;
-import doext.define.do_PrograssBar_IMethod;
-import doext.define.do_PrograssBar_MAbstract;
+import doext.define.do_ProgressBar_IMethod;
+import doext.define.do_ProgressBar_MAbstract;
 
 /**
  * 自定义扩展UIView组件实现类，此类必须继承相应VIEW类，并实现DoIUIModuleView,do_PrograssBar_IMethod接口；
@@ -26,16 +26,16 @@ import doext.define.do_PrograssBar_MAbstract;
  * 参数解释：@_messageName字符串事件名称，@jsonResult传递事件参数对象； 获取DoInvokeResult对象方式new
  * DoInvokeResult(this.getUniqueKey());
  */
-public class do_PrograssBar_View extends FrameLayout implements DoIUIModuleView, do_PrograssBar_IMethod, DoIModuleTypeID {
+public class do_ProgressBar_View extends FrameLayout implements DoIUIModuleView, do_ProgressBar_IMethod, DoIModuleTypeID {
 
 	/**
 	 * 每个UIview都会引用一个具体的model实例；
 	 */
-	private do_PrograssBar_MAbstract model;
+	private do_ProgressBar_MAbstract model;
 	private ProgressBar progressBar;
 
 	private Context context;
-	public do_PrograssBar_View(Context context) {
+	public do_ProgressBar_View(Context context) {
 		super(context);
 		this.context = context;
 	}
@@ -45,7 +45,7 @@ public class do_PrograssBar_View extends FrameLayout implements DoIUIModuleView,
 	 */
 	@Override
 	public void loadView(DoUIModule _doUIModule) throws Exception {
-		this.model = (do_PrograssBar_MAbstract) _doUIModule;
+		this.model = (do_ProgressBar_MAbstract) _doUIModule;
 		DoProperty _property = model.getProperty("style");
 		if (_property != null) {
 			String _value = _property.getValue();
