@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3B645BF21AE0F89300EF78C5 /* do_PrograssBar_UIModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B645BEF1AE0F89300EF78C5 /* do_PrograssBar_UIModel.m */; };
-		3B645BF31AE0F89300EF78C5 /* do_PrograssBar_UIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B645BF11AE0F89300EF78C5 /* do_PrograssBar_UIView.m */; };
+		3B645BF21AE0F89300EF78C5 /* do_ProgressBar_UIModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B645BEF1AE0F89300EF78C5 /* do_ProgressBar_UIModel.m */; };
+		3B645BF31AE0F89300EF78C5 /* do_ProgressBar_UIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B645BF11AE0F89300EF78C5 /* do_ProgressBar_UIView.m */; };
 		3B645BF81AE1015100EF78C5 /* do_UIActivityView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B645BF51AE1015100EF78C5 /* do_UIActivityView.m */; };
 		3B645BF91AE1015100EF78C5 /* do_UIProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B645BF71AE1015100EF78C5 /* do_UIProgressView.m */; };
-		3B645BFA1AE107AD00EF78C5 /* do_PrograssBar_IView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3B645BED1AE0F88900EF78C5 /* do_PrograssBar_IView.h */; };
-		3B645BFB1AE107AD00EF78C5 /* do_PrograssBar_UIModel.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3B645BEE1AE0F89300EF78C5 /* do_PrograssBar_UIModel.h */; };
-		3B645BFC1AE107AD00EF78C5 /* do_PrograssBar_UIView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3B645BF01AE0F89300EF78C5 /* do_PrograssBar_UIView.h */; };
+		3B645BFA1AE107AD00EF78C5 /* do_ProgressBar_IView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3B645BED1AE0F88900EF78C5 /* do_ProgressBar_IView.h */; };
+		3B645BFB1AE107AD00EF78C5 /* do_ProgressBar_UIModel.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3B645BEE1AE0F89300EF78C5 /* do_ProgressBar_UIModel.h */; };
+		3B645BFC1AE107AD00EF78C5 /* do_ProgressBar_UIView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3B645BF01AE0F89300EF78C5 /* do_ProgressBar_UIView.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,20 +23,20 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				3B645BFA1AE107AD00EF78C5 /* do_PrograssBar_IView.h in CopyFiles */,
-				3B645BFB1AE107AD00EF78C5 /* do_PrograssBar_UIModel.h in CopyFiles */,
-				3B645BFC1AE107AD00EF78C5 /* do_PrograssBar_UIView.h in CopyFiles */,
+				3B645BFA1AE107AD00EF78C5 /* do_ProgressBar_IView.h in CopyFiles */,
+				3B645BFB1AE107AD00EF78C5 /* do_ProgressBar_UIModel.h in CopyFiles */,
+				3B645BFC1AE107AD00EF78C5 /* do_ProgressBar_UIView.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		3B645BED1AE0F88900EF78C5 /* do_PrograssBar_IView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = do_PrograssBar_IView.h; sourceTree = "<group>"; };
-		3B645BEE1AE0F89300EF78C5 /* do_PrograssBar_UIModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = do_PrograssBar_UIModel.h; sourceTree = "<group>"; };
-		3B645BEF1AE0F89300EF78C5 /* do_PrograssBar_UIModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = do_PrograssBar_UIModel.m; sourceTree = "<group>"; };
-		3B645BF01AE0F89300EF78C5 /* do_PrograssBar_UIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = do_PrograssBar_UIView.h; sourceTree = "<group>"; };
-		3B645BF11AE0F89300EF78C5 /* do_PrograssBar_UIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = do_PrograssBar_UIView.m; sourceTree = "<group>"; };
+		3B645BED1AE0F88900EF78C5 /* do_ProgressBar_IView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = do_ProgressBar_IView.h; sourceTree = "<group>"; };
+		3B645BEE1AE0F89300EF78C5 /* do_ProgressBar_UIModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = do_ProgressBar_UIModel.h; sourceTree = "<group>"; };
+		3B645BEF1AE0F89300EF78C5 /* do_ProgressBar_UIModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = do_ProgressBar_UIModel.m; sourceTree = "<group>"; };
+		3B645BF01AE0F89300EF78C5 /* do_ProgressBar_UIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = do_ProgressBar_UIView.h; sourceTree = "<group>"; };
+		3B645BF11AE0F89300EF78C5 /* do_ProgressBar_UIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = do_ProgressBar_UIView.m; sourceTree = "<group>"; };
 		3B645BF41AE1015100EF78C5 /* do_UIActivityView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = do_UIActivityView.h; sourceTree = "<group>"; };
 		3B645BF51AE1015100EF78C5 /* do_UIActivityView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = do_UIActivityView.m; sourceTree = "<group>"; };
 		3B645BF61AE1015100EF78C5 /* do_UIProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = do_UIProgressView.h; sourceTree = "<group>"; };
@@ -59,7 +59,7 @@
 		A4917C4C1A78942600FFB148 /* ext_define */ = {
 			isa = PBXGroup;
 			children = (
-				3B645BED1AE0F88900EF78C5 /* do_PrograssBar_IView.h */,
+				3B645BED1AE0F88900EF78C5 /* do_ProgressBar_IView.h */,
 			);
 			path = ext_define;
 			sourceTree = "<group>";
@@ -71,10 +71,10 @@
 				3B645BF51AE1015100EF78C5 /* do_UIActivityView.m */,
 				3B645BF61AE1015100EF78C5 /* do_UIProgressView.h */,
 				3B645BF71AE1015100EF78C5 /* do_UIProgressView.m */,
-				3B645BEE1AE0F89300EF78C5 /* do_PrograssBar_UIModel.h */,
-				3B645BEF1AE0F89300EF78C5 /* do_PrograssBar_UIModel.m */,
-				3B645BF01AE0F89300EF78C5 /* do_PrograssBar_UIView.h */,
-				3B645BF11AE0F89300EF78C5 /* do_PrograssBar_UIView.m */,
+				3B645BEE1AE0F89300EF78C5 /* do_ProgressBar_UIModel.h */,
+				3B645BEF1AE0F89300EF78C5 /* do_ProgressBar_UIModel.m */,
+				3B645BF01AE0F89300EF78C5 /* do_ProgressBar_UIView.h */,
+				3B645BF11AE0F89300EF78C5 /* do_ProgressBar_UIView.m */,
 			);
 			path = ext_implement;
 			sourceTree = "<group>";
@@ -154,9 +154,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B645BF81AE1015100EF78C5 /* do_UIActivityView.m in Sources */,
-				3B645BF31AE0F89300EF78C5 /* do_PrograssBar_UIView.m in Sources */,
+				3B645BF31AE0F89300EF78C5 /* do_ProgressBar_UIView.m in Sources */,
 				3B645BF91AE1015100EF78C5 /* do_UIProgressView.m in Sources */,
-				3B645BF21AE0F89300EF78C5 /* do_PrograssBar_UIModel.m in Sources */,
+				3B645BF21AE0F89300EF78C5 /* do_ProgressBar_UIModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

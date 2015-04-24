@@ -6,7 +6,7 @@
 //  Copyright (c) 2015年 DoExt. All rights reserved.
 //
 
-#import "do_PrograssBar_UIView.h"
+#import "do_ProgressBar_UIView.h"
 
 #import "doInvokeResult.h"
 #import "doUIModuleHelper.h"
@@ -20,7 +20,7 @@
 #define STYLEHORIZOTAL @"horizontal"
 #define STYLENORMAL @"normal"
 
-@interface do_PrograssBar_UIView()
+@interface do_ProgressBar_UIView()
 
 @property(nonatomic,strong)do_UIProgressView *do_progress;
 @property(nonatomic,strong)do_UIActivityView *do_activity;
@@ -31,7 +31,7 @@
 
 @end
 
-@implementation do_PrograssBar_UIView
+@implementation do_ProgressBar_UIView
 #pragma mark - doIUIModuleView协议方法（必须）
 //引用Model对象
 - (void) LoadView: (doUIModule *) _doUIModule
