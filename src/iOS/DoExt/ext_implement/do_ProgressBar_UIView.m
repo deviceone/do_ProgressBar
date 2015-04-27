@@ -6,7 +6,7 @@
 //  Copyright (c) 2015年 DoExt. All rights reserved.
 //
 
-#import "do_PrograssBar_UIView.h"
+#import "do_ProgressBar_UIView.h"
 
 #import "doInvokeResult.h"
 #import "doUIModuleHelper.h"
@@ -20,7 +20,7 @@
 #define STYLEHORIZOTAL @"horizontal"
 #define STYLENORMAL @"normal"
 
-@interface do_PrograssBar_UIView()
+@interface do_ProgressBar_UIView()
 
 @property(nonatomic,strong)do_UIProgressView *do_progress;
 @property(nonatomic,strong)do_UIActivityView *do_activity;
@@ -31,17 +31,17 @@
 
 @end
 
-@implementation do_PrograssBar_UIView
+@implementation do_ProgressBar_UIView
 #pragma mark - doIUIModuleView协议方法（必须）
 //引用Model对象
 - (void) LoadView: (doUIModule *) _doUIModule
 {
     _model = (typeof(_model)) _doUIModule;
-    UIView *subView = [self initView];
+    UIView *subView = [self InitView];
     [self addSubview:subView];
 }
 
-- (UIView *)initView
+- (UIView *)InitView
 {
     UIView *prograssBarView;
     self.do_realH = _model.RealHeight;
@@ -78,9 +78,10 @@
 - (void) OnRedraw
 {
     //实现布局相关的修改
-    
     //重新调整视图的x,y,w,h
     [doUIModuleHelper OnRedraw:_model];
+    self.do_progress.frame = self.frame;
+    self.do_progress.center = self.center;
 }
 
 #pragma mark - TYPEID_IView协议方法（必须）
@@ -134,7 +135,7 @@
         [activity startAnimating];
         [self addSubview:activity];
     }
-
+    
 }
 
 #pragma mark - doIUIModuleView协议方法（必须）<大部分情况不需修改>

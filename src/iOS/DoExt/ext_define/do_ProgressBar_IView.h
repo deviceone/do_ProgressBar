@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@protocol do_PrograssBar_IView <NSObject>
+@protocol do_ProgressBar_IView <NSObject>
 
 @required
 //属性方法
