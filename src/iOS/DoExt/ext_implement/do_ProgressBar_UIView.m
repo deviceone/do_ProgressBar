@@ -80,8 +80,18 @@
     //实现布局相关的修改
     //重新调整视图的x,y,w,h
     [doUIModuleHelper OnRedraw:_model];
-    self.do_progress.frame = self.frame;
-    self.do_progress.center = self.center;
+    CGRect frame ;
+    if(self.do_progress)
+    {
+        frame = CGRectMake(0,  _model.RealHeight / 2, _model.RealWidth, _model.RealHeight);
+        self.do_progress.frame = frame;
+    }
+    else if (self.do_activity)
+    {
+        frame = CGRectMake( _model.RealWidth / 2 , _model.RealHeight / 2, _model.RealWidth, _model.RealHeight);
+        self.do_activity.frame = frame;
+    }
+    
 }
 
 #pragma mark - TYPEID_IView协议方法（必须）
